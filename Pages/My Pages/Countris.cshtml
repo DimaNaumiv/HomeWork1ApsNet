@@ -1,0 +1,16 @@
+﻿@page
+@model Homework_1.Pages.My_Pages.CountrisModel
+@{
+}
+<div>
+	<h1 style="@Model.style.Title">Countries and Info:</h1>
+	<div>
+		@foreach(var i  in Model.Countris)
+		{
+			<div style="@Model.style.Box">
+				<h2 style="@Model.style.Name">@i.Name</h2>
+				<h4 style="@Model.style.Info">@i.Info</h4>
+			</div>
+		}
+	</div>
+</div>

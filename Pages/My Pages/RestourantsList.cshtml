@@ -1,0 +1,22 @@
+﻿@page
+@model Homework_1.Pages.My_Pages.RestourantsListModel
+@{
+}
+<div>
+	<h1 style="@Model.style.Title">Restaurants:</h1>
+	<div style="@Model.style.Boxes">
+		@foreach(var i in Model.Restks)
+		{
+			<div style="@Model.style.Box">
+				<div style="@Model.style.MainInfo">
+					<h3 style="@Model.style.Name">@i.Name</h3>
+					<h3 style="@Model.style.Addres">@i.Addres</h3>
+				</div>
+				<div style="@Model.style.HelpInfo">
+					<h4 style="@Model.style.Phone">@i.PhoneNumber</h4>
+					<h4 style="@Model.style.Email">@i.Email</h4>
+				</div>
+			</div>
+		}
+	</div>
+</div>

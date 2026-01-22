@@ -1,0 +1,16 @@
+﻿@page
+@model Homework_1.Pages.My_Pages.RestourantModel
+@{
+}
+<div>
+	<div>
+		<div style="@Model.style.MainInfoBox">
+			<h1 style="@Model.style.Name">@Model.Restik.Name</h1>
+			<h2 style="@Model.style.Adress">@Model.Restik.Addres</h2>
+		</div>
+		<div style="@Model.style.HelpInfoBox">
+			<h4 style="@Model.style.Number">@Model.Restik.PhoneNumber</h4>
+			<h4 style="@Model.style.Email">@Model.Restik.Email</h4>
+		</div>
+	</div>
+</div>
